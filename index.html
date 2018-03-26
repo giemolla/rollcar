@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/Fonts/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/css/main.css" />
-    <script src="main.js"></script>
 </head>
 <body>
 
@@ -26,11 +25,12 @@
         </div>
         <div class="nav-list-wrapper">
             <ul class="nav-list">
-                <li class="nav-list-item active">Strona główna</li>
-                <li class="nav-list-item">O firmie</li>
-                <li class="nav-list-item">Oferta</li>
-                <li class="nav-list-item">Kontakt</li>
-                <li class="nav-list-item"><img src="images/polish-flag.jpg" class="img-lang"> <i class="fa fa-angle-down"></i></li>
+                <li class="nav-list-item active"><a href="#">Strona główna</a></li>
+                <li class="nav-list-item"><a href="#">O firmie</a></li>
+                <li class="nav-list-item"><a href="#">Oferta</a></li>
+                <li class="nav-list-item"><a href="#">Kontakt</a></li>
+                <li class="nav-list-item lang"><img src="images/polish-flag.jpg" class="img-lang"> <i class="fa fa-angle-down"></i></li>
+                <li class="nav-list-item"><button class="fb-btn"><a href="#"><i class="fa fa-facebook"></i></a></button></li>
             </ul>
         </div>
     </nav>
@@ -192,7 +192,7 @@
     <footer class="footer">
         <div class="footer-inside">
 
-            <div class="footer-info">
+            <div class="one-third footer-info">
                 <div class="social">
                     <h3>Znajdziesz nas na:</h3>
                     <ul>
@@ -227,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="footer-site-map">
+            <div class="one-third footer-site-map">
                 <div class="page-map">
                     <h3>Strona główna</h3>
                     <h3>O firmie</h3>
@@ -241,29 +241,36 @@
                         <li>Spycharki</li>
                         <li>Walce</li>
                         <li>Ładowarki teleskopowe</li>
-                        <li>Dupa</li>
-                        <li>Srana</li>
-                        <li>Nananana</li>
+                        <li>Rozkładarki do asfaltu</li>
+                        <li>Małe maszyny</li>
+                        <li>Akcesoria i osprzęt</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="footer-contact">
+            <div class="one-third footer-contact">
                 <h3>Kontakt</h3>
                 <div class="contact-info">
                     +48 507 467 028<br>
                     +48 501 868 868<br>
                     <span style="text-transform: none;">biuro@rollcar.com.pl</span>
                 </div>
-                <img src="http://via.placeholder.com/300x300" alt="">
-            </div>
-
-            <div class="footer-bottom">
-                &copy; 2018 Roll-Car
+                <div id="map"></div>
             </div>
 
         </div>
+
+        <div class="footer-bottom">
+                2018 &copy; Roll-Car
+        </div>
+
     </footer>
 
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyDUIUeD5mTox6N7esNffgfz82hvQXxkI&callback=initMap"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="buttons.js"></script>
+    
 </body>
 </html>

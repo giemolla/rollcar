@@ -7,6 +7,7 @@ body {
     width: 100%;
     font-family: $main-font;
     font-size: 1em;
+    letter-spacing: 1px;
 }
 
 ul, ol {
@@ -25,4 +26,9 @@ ul, menu, dir {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     -webkit-padding-start: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
