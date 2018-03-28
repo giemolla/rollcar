@@ -25,6 +25,18 @@ $(document).ready(function() {
          stickyNav();
      });
 
+     var toggleNav = function() {
+        $('.bar1').toggleClass('change-bar1');
+        $('.bar2').toggleClass('change-bar2');
+        $('.bar3').toggleClass('change-bar3');
+        // $('.nav-list-mobile').slideToggle('expand');
+        $('body').toggleClass('overflow-hidden');
+    };
+
+    $('#open-nav').on('click', function() {
+        toggleNav();
+    });
+
 });
 
 
