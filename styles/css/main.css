@@ -462,7 +462,9 @@ a {
 
 .mobile {
   display: inline-block;
-  margin-left: 10px; }
+  margin-left: 10px;
+  height: 25px;
+  line-height: 25px; }
 
 .hamburger {
   background-color: transparent;
