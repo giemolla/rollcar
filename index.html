@@ -11,6 +11,9 @@
 </head>
 <body>
 
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/categories.js"></script>
+
     <div class="nav-info-wrapper">
         <ul class="nav-info">
             <li class="nav-info-item"><i class="fa fa-location-arrow"></i> 27-552 Baćkowice, Piórków 7B</li>
@@ -30,7 +33,7 @@
                 <li class="nav-list-item"><a href="#">Oferta</a></li>
                 <li class="nav-list-item"><a href="#">Kontakt</a></li>
                 <li class="nav-list-item lang"><img src="images/polish-flag.jpg" class="img-lang"> <i class="fa fa-angle-down"></i></li>
-                <li class="nav-list-item"><button class="fb-btn"><a href="#"><i class="fa fa-facebook"></i></a></button></li>
+                <li class="nav-list-item"><button class="fb-btn"><a href="https://www.facebook.com/rollcar.machinery/" target="_blank"><i class="fa fa-facebook"></i></a></button></li>
             </ul>
         </div>
 
@@ -39,7 +42,7 @@
                 <img src="images/polish-flag.jpg" class="img-lang">
                 <i class="fa fa-angle-down"></i>
             </div>
-            <button class="mobile fb-btn fb-btn-mobile"><a href="#"><i class="fa fa-facebook"></i></a></button>
+            <button class="mobile fb-btn fb-btn-mobile"><a href="https://www.facebook.com/rollcar.machinery/" target="_blank"><i class="fa fa-facebook"></i></a></button>
             <button class="mobile hamburger" id="open-nav">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -50,10 +53,10 @@
 
         <div class="nav-list-mobile-wrapper">
             <ul class="nav-list-mobile">
-                <li class="mobile-list-item"><a href="#">Strona główna</a></li>
-                <li class="mobile-list-item"><a href="#">O firmie</a></li>
-                <li class="mobile-list-item"><a href="#">Oferta</a></li>
-                <li class="mobile-list-item"><a href="#">Kontakt</a></li>
+                <li class="mobile-list-item"><a href="#"><span>Strona główna</span></a></li>
+                <li class="mobile-list-item"><a href="#"><span>O firmie</span></a></li>
+                <li class="mobile-list-item"><a href="#"><span>Oferta</span></a></li>
+                <li class="mobile-list-item"><a href="#"><span>Kontakt</span></a></li>
             </ul>
         </div>
     </nav>
@@ -71,8 +74,8 @@
                     <span class="header-text-medium">+48 507 467 028</span><br>
                     <span class="header-text-medium">+48 501 868 868</span><br>
                     <span class="header-text-small" style="text-transform:initial;">biuro@rollcar.com.pl</span><br>
-                    <button class="header-btn primary-btn">Zobacz ofertę</button>
-                    <button class="header-btn secondary-btn">Znajdź nas na mapie</button>
+                    <button class="header-btn primary-btn"><a href="#">Zobacz ofertę</a></button>
+                    <button class="header-btn secondary-btn"><a href="#">Znajdź nas na mapie</a></button>
                 </div>
             </div>
         </div>
@@ -80,127 +83,20 @@
 
     <div class="main-content">
         <ul class="category-list">
-            <li class="category">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <img src="images/category/wheel-ex.jpg" alt="Roll-Car">
-                    </a>
-                </div>
-                <div class="caption">
-                    <span class="caption-text">Koparki kołowe</span>
-                    <div class="amount">4</div>
-                </div>
-            </li>
-            <li class="category">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <img src="images/category/tracked-ex.jpg" alt="Roll-Car">
-                    </a>
-                </div>
-                <div class="caption">
-                    <span class="caption-text">Koparki gąsienicowe</span>
-                    <div class="amount">4</div>
-                </div>
-            </li>
-            <li class="category">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <img src="images/category/backhoe.jpg" alt="Roll-Car">
-                    </a>
-                </div>
-                <div class="caption">
-                    <span class="caption-text">Koparko-ładowarki</span>
-                    <div class="amount">4</div>
-                </div>
-            </li>
-            <li class="category">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <img src="images/category/loader.png" alt="Roll-Car">
-                    </a>
-                </div>
-                <div class="caption">
-                    <span class="caption-text">Ładowarki</span>
-                    <div class="amount">4</div>
-                </div>
-            </li>
-            <li class="category">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <img src="images/category/truck.jpg" alt="Roll-Car">
-                    </a>
-                </div>
-                <div class="caption">
-                    <span class="caption-text">Wozidła</span>
-                    <div class="amount">4</div>
-                </div>
-            </li>
-            <li class="category">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <img src="images/category/dozer.jpg" alt="Roll-Car">
-                    </a>
-                </div>
-                <div class="caption">
-                    <span class="caption-text">Spycharki</span>
-                    <div class="amount">8</div>
-                </div>
-            </li>
-            <li class="category">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <img src="images/category/roller.jpg" alt="Roll-Car">
-                    </a>
-                </div>
-                <div class="caption">
-                    <span class="caption-text">Walce</span>
-                    <div class="amount">12</div>
-                </div>
-            </li>
-            <li class="category">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <img src="images/category/telehandler.jpg" alt="Roll-Car">
-                    </a>
-                </div>
-                <div class="caption">
-                    <span class="caption-text">Ładowarki teleskopowe</span>
-                    <div class="amount">4</div>
-                </div>
-            </li>
-            <li class="category">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <img src="images/category/telehandler.jpg" alt="Roll-Car">
-                    </a>
-                </div>
-                <div class="caption">
-                    <span class="caption-text">Ładowarki teleskopowe</span>
-                    <div class="amount">4</div>
-                </div>
-            </li>
-            <li class="category">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <img src="images/category/telehandler.jpg" alt="Roll-Car">
-                    </a>
-                </div>
-                <div class="caption">
-                    <span class="caption-text">Ładowarki teleskopowe</span>
-                    <div class="amount">4</div>
-                </div>
-            </li>
-            <li class="category">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <img src="images/category/telehandler.jpg" alt="Roll-Car">
-                    </a>
-                </div>
-                <div class="caption">
-                    <span class="caption-text">Ładowarki teleskopowe</span>
-                    <div class="amount">4</div>
-                </div>
-            </li>
+            <!-- <li> dla jednego elementu listy kategorii -->
+            <!-- <li class="category">
+                <a href="#">
+                    <div class="image-wrapper">
+                        <a href="#">
+                            <img src="images/category/wheel-ex.jpg" alt="Roll-Car">
+                        </a>
+                    </div>
+                    <div class="caption">
+                        <span class="caption-text">Koparki kołowe</span>
+                        <div class="amount">4</div>
+                    </div>
+                </a>
+            </li> -->
         </ul>
     </div>
 
@@ -289,11 +185,9 @@
 
     </footer>
 
-    <script src="scripts/jquery-3.1.1.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyDUIUeD5mTox6N7esNffgfz82hvQXxkI&callback=initMap"></script>
     <script src="scripts/nav.js"></script>
     <script src="scripts/map.js"></script>
-    <script src="buttons.js"></script>
     
 </body>
 </html>
