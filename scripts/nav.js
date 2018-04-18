@@ -9,12 +9,22 @@ $(document).ready(function() {
          { 
              $('.nav').addClass('sticky');
              $('.fb-btn').addClass('fb-fixed');
+             
+             if ($('.logo-wrapper').hasClass('blocked-logo') === false) {
+                $('.logo-wrapper').addClass('show-logo');
+             }
+
          }
           
          else
          {
              $('.nav').removeClass('sticky'); 
              $('.fb-btn').removeClass('fb-fixed');
+             
+             if ($('.logo-wrapper').hasClass('blocked-logo') === false) {
+                $('.logo-wrapper').removeClass('show-logo');
+             }
+
          }
      };
 
@@ -23,6 +33,7 @@ $(document).ready(function() {
      $(window).scroll(function() 
      {
          stickyNav();
+         hideLang();
      });
 
      var toggleNav = function() {
@@ -36,6 +47,18 @@ $(document).ready(function() {
     $('#open-nav').on('click', function() {
         toggleNav();
     });
+
+    var hideLang = function() {
+        $('.lang-options').fadeOut('show-lang');
+    };
+
+    var toggleLang = function() {
+        $('.lang-options').fadeToggle('show-lang');
+    };
+
+    $('.btn-lang').on('click', toggleLang);
+
+
 
 });
 

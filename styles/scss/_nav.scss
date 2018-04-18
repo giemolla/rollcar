@@ -6,7 +6,7 @@
     text-align: right;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
     .nav-info-wrapper {
         display: block;
     }
@@ -58,10 +58,19 @@
 }
 
 .logo-wrapper {
+    display: none;
     height: 40px;
     float: left;
     margin: 10px;
     margin-left: 5%;
+}
+
+.show-logo {
+    display: block;
+}
+
+.blocked-logo {
+    display: block;
 }
 
 .nav-list-wrapper {
@@ -71,7 +80,7 @@
     line-height: 56px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
     .nav-list-wrapper {
         display: block;
     }
@@ -99,6 +108,28 @@
 
 .img-lang {
     width: 20px;
+}
+
+.lang button {
+    border: none;
+    background-color: transparent;
+    color: $light-font;
+    margin-left: 5px;
+}
+
+.lang-options {
+    display: none;
+    position: absolute;
+    background-color: $dark;
+    width: 60px;
+    margin-left: -20px;
+    text-align: center;
+    margin-top: 4px;
+    border-top: 1px solid $shadow-font;
+}
+
+.show-lang {
+    display: block;
 }
 
 .fb-btn {

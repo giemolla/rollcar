@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sprzedaż maszyn budowlanych ROLL-CAR</title>
+    <title>Kontakt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/Fonts/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin-ext" rel="stylesheet">
@@ -15,29 +15,29 @@
     <script src="scripts/categories.js"></script>
 
     <div class="nav-info-wrapper">
-        <ul class="nav-info">
-            <li class="nav-info-item"><i class="fa fa-location-arrow"></i> 27-552 Baćkowice, Piórków 7B</li>
-            <li class="nav-info-item"><i class="fa fa-clock-o"></i> Pn-Pt: 8:00 - 17:00 Sb: 8:00 - 14:00</li>
-            <li class="nav-info-item"><i class="fa fa-phone"></i> +48 507 467 028</li>
-        </ul>
-    </div>
-    
+            <ul class="nav-info">
+                <li class="nav-info-item"><i class="fa fa-location-arrow"></i> 27-552 Baćkowice, Piórków 7B</li>
+                <li class="nav-info-item"><i class="fa fa-clock-o"></i> Pn-Pt: 8:00 - 17:00 Sb: 8:00 - 14:00</li>
+                <li class="nav-info-item"><i class="fa fa-phone"></i> +48 507 467 028</li>
+            </ul>
+        </div>
+        
     <nav class="nav">
-        <div class="logo-wrapper">
+        <div class="logo-wrapper blocked-logo">
             <img src="images/logo02.png" alt="Roll-Car">
         </div>
         <div class="nav-list-wrapper">
             <ul class="nav-list">
-                <li class="nav-list-item active"><a href="#">Strona główna</a></li>
+                <li class="nav-list-item"><a href="index.html">Strona główna</a></li>
                 <li class="nav-list-item"><a href="about.html">O firmie</a></li>
                 <li class="nav-list-item"><a href="#">Oferta</a></li>
-                <li class="nav-list-item"><a href="contact.html">Kontakt</a></li>
+                <li class="nav-list-item active"><a href="contact.html">Kontakt</a></li>
                 <li class="nav-list-item lang">
                     <img src="images/polish-flag.jpg" class="img-lang">
                     <button class="btn-lang">
                         <i class="fa fa-angle-down"></i>
                     </button>
-                    <div class="lang-options" style="z-index: 999999999;">
+                    <div class="lang-options">
                         <a href="#">
                             <img src="images/british-flag.png" class="img-lang">
                         </a>
@@ -63,7 +63,7 @@
 
         <div class="nav-list-mobile-wrapper">
             <ul class="nav-list-mobile">
-                <li class="mobile-list-item"><a href="#"><span>Strona główna</span></a></li>
+                <li class="mobile-list-item"><a href="index.html"><span>Strona główna</span></a></li>
                 <li class="mobile-list-item"><a href="about.html"><span>O firmie</span></a></li>
                 <li class="mobile-list-item"><a href="#"><span>Oferta</span></a></li>
                 <li class="mobile-list-item"><a href="contact.html"><span>Kontakt</span></a></li>
@@ -71,51 +71,22 @@
         </div>
     </nav>
 
-    <header class="header">
-        <div class="company-card">
-            <div class="company-card-inside">
-                <div class="inside-half company-data">
-                    <span class="header-text-medium">P.U.H.</span><br>
-                    <span class="header-text-big"><img src="images/logo01.png"></span><br>
-                    <span class="header-text-medium">Krzysztof Chodorek</span><br>
-                    <span class="header-text-small">Sprzedaż maszyn budowlanych i akcesoriów</span>
-                </div>
-                <div class="inside-half company-contact">
-                    <span class="header-text-medium">+48 507 467 028</span><br>
-                    <span class="header-text-medium">+48 501 868 868</span><br>
-                    <span class="header-text-small" style="text-transform:initial;">biuro@rollcar.com.pl</span><br>
-                    <button class="header-btn primary-btn"><a href="#">Zobacz ofertę</a></button>
-                    <button class="header-btn secondary-btn"><a href="contact.html">Znajdź nas na mapie</a></button>
-                </div>
-            </div>
+    <div class="contact-data">
+        <div class="phone-numbers">
+            <p>Krzysztof Chodorek: +48 507 467 028</p>
+            <p>Biuro: +48 501 868 868</p>
+            <p>Email: biuro@rollcar.com.pl</p>
         </div>
-    </header>
-
-    <div class="main-content">
-        <ul class="category-list">
-            <!-- <li> dla jednego elementu listy kategorii -->
-            <!-- <li class="category">
-                <a href="#">
-                    <div class="image-wrapper">
-                        <a href="#">
-                            <img src="images/category/wheel-ex.jpg" alt="Roll-Car">
-                        </a>
-                    </div>
-                    <div class="caption">
-                        <span class="caption-text">Koparki kołowe</span>
-                        <div class="amount">4</div>
-                    </div>
-                </a>
-            </li> -->
-        </ul>
+        <div class="address">
+            <p>Adres: Polska, 27-552 Baćkowice, Piórków 7B</p>
+        </div>
     </div>
 
-    <div class="contact-section">
+    <div id="map" class="map"></div>
 
-    </div>
-
-    <div class="map-section">
-
+    <div class="fb">
+        <h5>Polub nas na Facebook'u:</h5>
+        <p><button class="fb-btn"><a href="https://www.facebook.com/rollcar.machinery/" target="_blank"><i class="fa fa-facebook"></i></a></button> /rollcar.machinery</p>
     </div>
 
     <footer class="footer">
@@ -172,7 +143,10 @@
                     <span>+48 501 868 868</span>
                     <span style="text-transform: none;">biuro@rollcar.com.pl</span>
                 </div>
-                <div id="map"></div>
+                <div class="footer-image">
+                    <img src="images/excavatorr.png">
+                    <img src="images/logo02.png">
+                </div>
             </div>
 
         </div>

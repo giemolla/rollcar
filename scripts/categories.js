@@ -50,6 +50,11 @@ $(document).ready(function() {
             name: "koparki",
             amount: 5,
             imgSrc: "images/category/wheel-ex.jpg"
+        },
+        {
+            name: "koparki",
+            amount: 5,
+            imgSrc: "images/category/wheel-ex.jpg"
         }
     ];
 
@@ -64,5 +69,15 @@ $(document).ready(function() {
     };
 
     listGenerator();
+
+    var footerListGenerator = function() {
+        $('.page-map ul').html(function() {
+            for ( var i = 0; i < categories.length; i++ ) {
+                $(this).append("<li><a href='#'>" + categories[i].name + "</a></li>");
+            }
+        });
+    };
+
+    footerListGenerator();
 
 });
