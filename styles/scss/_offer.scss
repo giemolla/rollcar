@@ -1,0 +1,30 @@
+.offer-content {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.side-category-list {
+    width: 24%;
+    border-right: 2px solid $light-font;
+    text-transform: uppercase;
+}
+
+.side-category-list > * {
+    margin: 20px;
+}
+
+.side-category-list h3 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 1px solid $main-color;
+    background-color: $main-color;
+    padding: 10px;
+}
+
+.side-category-list li {
+    margin-top: 20px;
+}
+
+.side-category-list li a:hover {
+    border-bottom: 2px solid $main-color;
+}

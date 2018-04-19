@@ -80,4 +80,14 @@ $(document).ready(function() {
 
     footerListGenerator();
 
+    var sideListGenerator = function() {
+        $('.side-category-list ul').html(function() {
+            for ( var i = 0; i < categories.length; i++ ) {
+                $(this).append("<li><a href='#'>" + categories[i].name + "</a></li>");
+            }
+        });
+    };
+
+    sideListGenerator();
+
 });

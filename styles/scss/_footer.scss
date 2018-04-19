@@ -84,6 +84,19 @@
     margin-top: 40px;
 }
 
+.footer-image img {
+    max-width: 100%;
+    display: block;
+}
+
+.footer-image img:first-child {
+    max-height: 80%;
+}
+
+.footer-image img:last-child {
+    max-height: 20%;
+}
+
 .footer-bottom {
     clear: both;
     width: 80%;

@@ -1,33 +1,116 @@
 .map {
     min-height: 500px;
-    margin-bottom: 80px;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
 }
 
 .contact-data {
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 
 .contact * {
     margin: 20px;
 }
 
-.contact {
-    margin-bottom: 80px;
+.phone-numbers {
+    display: none;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.phone-numbers-mobile {
+    display: block;
+    padding: 40px 0;
+}
+
+.two-p {
+    margin: 20px auto;
+    border-bottom: 1px solid $main-color;
+    padding-bottom: 10px;
+    width: 80%;
+}
+
+.two-p * {
+    margin-top: 20px;
+}
+
+.names, .numbers {
+    display: inline-block;
+    line-height: 2em;
+}
+
+.names {
+    text-align: right;
+    border-right: 1px solid $main-color;
+}
+
+.names p {
+    margin-right: 20px;
+}
+
+.numbers {
+    text-align: left;
+}
+
+.numbers p {
+    margin-left: 20px;
+}
+
+.contact-data i {
+    margin-right: 15px;
+    color: $accent-color;
 }
 
 .address {
-    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $main-color;
 }
 
 .fb {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
+    padding-top: 80px;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
+    background-color: $light-font;
 }
 
 .fb > * {
     margin: 20px;
+}
+
+.fb span:hover .fb-btn {
+    background-color: lighten($accent-color, 10%);
+    border-color: lighten($accent-color, 10%);
+    cursor: pointer;
+}
+
+.fb span:hover {
+    color: $shadow-font;
+    cursor: pointer;
+}
+
+.fb a:hover {
+    cursor: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-data {
+        font-size: 2.5em;
+    }
+    
+    .phone-numbers {
+        display: block;
+        padding: 80px 0;
+    }
+
+    .phone-numbers-mobile {
+        display: none;
+    }
+    
+    .address {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 }
