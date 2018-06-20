@@ -81,7 +81,7 @@ $(document).ready(function() {
     footerListGenerator();
 
     var sideListGenerator = function() {
-        $('.side-category-list ul').html(function() {
+        $('.side-category .side-category-list').html(function() {
             for ( var i = 0; i < categories.length; i++ ) {
                 $(this).append("<li><a href='#'>" + categories[i].name + "</a></li>");
             }
@@ -89,5 +89,15 @@ $(document).ready(function() {
     };
 
     sideListGenerator();
+
+    var selectOptionsGenerator = function() {
+        $('.choose-category select').html(function() {
+            for ( var i = 0; i < categories.length; i++ ) {
+                $(this).append("<option value='" + categories[i].name.toLocaleLowerCase + "'>" + categories[i].name + "</option>");
+            }
+        });
+    };
+
+    selectOptionsGenerator();
 
 });

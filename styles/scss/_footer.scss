@@ -12,6 +12,7 @@
 .footer-inside {
     width: 80%;
     margin: 0 auto;
+    background-color: inherit;
 }
 
 .one-third {
@@ -62,6 +63,14 @@
     color: $shadow-font;
 }
 
+.page-map li:hover {
+    color: $light-font;
+}
+
+.page-map h3 {
+    cursor: pointer;
+}
+
 .contact-info {
     font-size: 1.5em;
     line-height: 40px;
@@ -102,7 +111,8 @@
     width: 80%;
     margin: 0 auto;
     color: $shadow-font;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: inherit;
 }
 
 @media screen and (min-width: 1024px) {

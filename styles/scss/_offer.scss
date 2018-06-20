@@ -1,19 +1,38 @@
 .offer-content {
-    width: 80%;
-    margin: 80px auto;
+    width: 90%;
+    margin: 40px auto;
 }
 
-.side-category-list {
+@media screen and (min-width: 655px) {
+    .offer-content {
+        margin: 80px auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .offer-content {
+        width: 80%;
+    }
+}
+
+.side-category {
     width: 24%;
     border-right: 2px solid $light-font;
     text-transform: uppercase;
+    display: none;
 }
 
-.side-category-list > * {
+@media screen and (min-width: 1024px) {
+    .side-category {
+        display: inline-block;
+    }
+}
+
+.side-category > * {
     margin: 20px;
 }
 
-.side-category-list h3 {
+.side-category h3 {
     margin-bottom: 30px;
     margin-top: 30px;
     border: 1px solid $main-color;
@@ -21,10 +40,220 @@
     padding: 10px;
 }
 
-.side-category-list li {
+.side-category li {
     margin-top: 20px;
 }
 
-.side-category-list li a:hover {
+.side-category li a:hover {
     border-bottom: 2px solid $main-color;
+}
+
+.latest {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .latest {
+        width: 70%;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .latest {
+        margin-left: 50px;
+    }
+}
+
+.latest-item {
+    margin: 30px auto;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.46);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.46);
+}
+
+.img-wrapper, .item-details {
+    display: block;
+    margin: 0;
+    padding: 0;
+    
+}
+
+@media screen and (min-width: 655px) {
+    .latest-item {
+        height: 200px;
+    }
+    .img-wrapper, .item-details {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 40%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.img-wrapper > a {
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.img-wrapper > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-details {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 655px) {
+    .img-wrapper {
+        width: 40%;
+        height: 100%;
+    }
+    .img-wrapper > a {
+        margin-left: 25px;
+        margin-top: 25px;
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .item-details {
+        margin-top: 0;
+    }
+    .img-wrapper {
+        text-align: initial;
+    }
+    .img-wrapper > a {
+        height: 200px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.item-details > * {
+    margin: 15px auto;
+}
+
+.item-details .machine-name > a:hover {
+    border-bottom: 2px solid $main-color; 
+}
+
+.item-details .machine-name i {
+    color: $accent-color;
+    cursor: pointer;
+}
+
+.item-details .machine-name i:hover {
+    color: $main-color;
+}
+
+.small-details, .price {
+    display: inline-block;
+}
+
+.small-details {
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.small-details > li {
+    margin-top: 10px;
+}
+
+.price {
+    margin-top: 0;
+    top: 0;
+    left: 85%;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.item-details > button {
+    left: 85%;
+    padding: 5px 20px;
+    line-height: 1.2em;
+    font-size: 1.1em;
+    margin-top: -5px;
+    width: 120px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    top: 60%;
+}
+
+@media screen and (min-width: 568px) {
+    .item-details {
+        width: 50%;
+        text-align: initial;
+        margin-left: 40px;
+    }
+    .price, .item-details > button {
+        position: absolute;
+    }
+    .item-details > button {
+        margin-top: -20px;
+    }
+    .price {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 655px) {
+    .item-details > * {
+        margin: 15px auto;
+    }
+    .price {
+        left: 40%;
+        top: 45%;
+    }
+    .item-details > button {
+        left: 40%;
+        top: 100%; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .price {
+        left: 50%;
+    }
+    .item-details > button {
+        left: 50%;
+    }
+}
+
+.choose-category {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 568px) {
+    .choose-category {
+        width: 50%
+    }
+}
+
+select {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .choose-category {
+        display: none;
+    }
 }
