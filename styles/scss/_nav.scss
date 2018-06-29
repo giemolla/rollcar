@@ -61,14 +61,14 @@
     display: none;
     height: 30px;
     float: left;
-    margin: 15px;
-    margin-left: 5%;
+    margin: 4% 5%;
 }
 
 @media screen and (min-width: 360px) {
     .logo-wrapper {
         height: 40px;
         margin: 10px;
+        margin-left: 5%;
     }
 }
 

@@ -388,13 +388,13 @@ a, button {
   display: none;
   height: 30px;
   float: left;
-  margin: 15px;
-  margin-left: 5%; }
+  margin: 4% 5%; }
 
 @media screen and (min-width: 360px) {
   .logo-wrapper {
     height: 40px;
-    margin: 10px; } }
+    margin: 10px;
+    margin-left: 5%; } }
 .show-logo {
   display: block; }
 
@@ -1131,73 +1131,110 @@ h1 > span {
 h1 > span:hover {
   color: #fb3; }
 
-.photo-section, .price-section {
-  display: inline-block;
-  vertical-align: top; }
-
 .price-section {
-  margin-left: 80px;
-  margin-top: 20px;
-  text-align: right; }
+  border: none;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  float: none; }
 
+@media screen and (min-width: 768px) {
+  .price-section {
+    border-left: 2px solid #EAEAEA;
+    margin-top: 20px;
+    margin-left: 2.5%;
+    margin-right: 0;
+    padding-left: 1%;
+    padding-bottom: 40px;
+    text-align: center;
+    width: 46%;
+    float: right; } }
+@media screen and (min-width: 1024px) {
+  .photo-section, .price-section {
+    display: inline-block;
+    vertical-align: top; }
+
+  .price-section {
+    position: absolute;
+    margin-top: 40px;
+    float: none;
+    width: 36%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 0;
+    border: none; } }
 .price-info > * {
-  margin: 20px 0 10px  0;
+  margin: 0;
   padding: 0; }
 
 .price-info > h1 {
   margin-right: 10px;
-  font-size: 2.3em; }
+  font-size: 2.3em;
+  position: relative; }
+
+.price-info > h1:after {
+  content: "netto";
+  color: #848484;
+  text-transform: none;
+  font-size: 0.5em;
+  font-weight: 400;
+  left: 0;
+  position: absolute;
+  top: 35px;
+  left: 5px; }
 
 .price-section h1, .price-btn {
   display: inline-block; }
 
 .price-btn {
-  border: none;
-  font-size: 1.2em;
-  padding: 5px 15px;
-  border: 2px solid #fb3; }
-
-.price-btn.pln {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-color: #fb3; }
-
-.price-btn.eur {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  font-size: 0.9em;
+  padding: 3px 5px;
+  border: 2px solid #fb3;
   color: #848484;
   background-color: transparent; }
+
+.price-btn.pln {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+.price-btn.eur {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.price-btn.chosen {
+  background-color: #fb3;
+  color: initial;
+  cursor: default; }
 
 .price-btn:hover {
   background-color: #fb3;
   color: initial; }
 
-.price-section .netto {
-  color: #848484;
-  text-transform: none;
-  font-weight: 400;
-  margin-left: 10px;
-  margin-top: -10px;
-  float: left; }
-
 .price-section h3 {
   margin: 60px 0 30px; }
 
 .tel-btn {
-  display: block;
-  width: 300px;
-  margin: 10px 0;
+  width: 90%;
+  max-width: 300px;
+  margin: 10px auto 0;
   padding: 10px 20px;
-  font-size: 1.3em; }
+  font-size: 1.2em; }
 
+@media screen and (min-width: 1024px) {
+  .tel-btn {
+    display: block; } }
 .tel-btn i {
   color: #124E78; }
 
 .photo-section {
   margin-top: 40px;
   margin-bottom: 80px;
-  width: 70%; }
+  width: 100%; }
 
+@media screen and (min-width: 1024px) {
+  .photo-section {
+    width: 65%; } }
 .main-photo {
   margin-bottom: 10px;
   position: relative;
@@ -1235,18 +1272,17 @@ h1 > span:hover {
   display: block; }
 
 .thumbs {
-  margin-bottom: 40px; }
+  width: 100%; }
 
 .thumbs > a {
   display: inline-block;
-  width: 150px;
-  height: 150px; }
+  width: 100px;
+  height: 100px;
+  margin: 5px; }
 
 .thumbs > a > img {
   width: 100%;
   height: 100%;
-  margin-right: 5px;
-  margin-bottom: 5px;
   object-fit: cover;
   object-position: center;
   opacity: 0.6; }
@@ -1254,16 +1290,18 @@ h1 > span:hover {
 .thumbs > a > img:hover {
   opacity: 1; }
 
-table, .description {
-  display: inline-block;
-  vertical-align: top; }
+.thumbs > a > img.chosen {
+  opacity: 1; }
 
 table {
   text-align: left;
   font-size: 1.1em;
   border-spacing: 0;
-  width: 40%; }
+  width: 100%; }
 
+@media screen and (min-width: 768px) {
+  table {
+    width: 50%; } }
 th {
   padding: 10px; }
 
@@ -1282,11 +1320,15 @@ td {
   border-top: 1px solid #fb3; }
 
 .description {
-  width: 59%; }
+  margin-top: 20px;
+  margin-bottom: 80px;
+  font-size: 0.9em; }
 
 .description > h2 {
-  padding: 30px 10px;
-  font-size: 1.4em; }
+  padding: 30px 10px; }
+
+.description > p {
+  font-size: 1.2em; }
 
 .map {
   min-height: 500px;
